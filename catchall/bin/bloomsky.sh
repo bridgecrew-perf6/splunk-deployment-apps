@@ -11,7 +11,5 @@ v=$(echo ${bloomsky} | jq '.Voltage')
 night=$(echo ${bloomsky} | jq '.Night')
 luminance=$(echo ${bloomsky} | jq '.Luminance')
 
-echo "${bloomsky}" >> bloomsky.json
-
 echo -e '{"Time":'${ts}',"Temperature":'${temp}',Rain":'${rain}',"Humidity":'${humidity}',"Pressure":'${pressure}',"UV":'${uv}',"Voltage":'${v}',"Night":'${night}',"Lumens":'${luminance}'}'
 

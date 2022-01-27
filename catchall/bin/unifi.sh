@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export PASSWORD_STORE_DIR=/home/splunk/.password-store/
+export GNUPGHOME=/home/splunk/.gnupg
 
 curl -sko /dev/null -X POST \
 	--data '{"username": "'$(pass show denhac/splunk/api/user)'", "password": "'$(pass show denhac/splunk/api/pass)'"}' \

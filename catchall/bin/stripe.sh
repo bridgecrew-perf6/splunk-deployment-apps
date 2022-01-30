@@ -3,6 +3,9 @@
 TZ=MST
 TS=$(date +"%Y-%m-%dT%H:%M:%S")
 
+export PASSWORD_STORE_DIR=/home/splunk/.password-store/
+export GNUPGHOME=/home/splunk/.gnupg
+
 function start_curl {
 	if [[ ${1} ]]; then
 		local PAGINATION="&starting_after=${1}"

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+>&2 echo $(pass show denhac/test/fakeCred)
 
 TZ=MST
 TS=$(date +"%Y-%m-%dT%H:%M:%S")

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 TZ=MST
 TS=$(date +"%Y-%m-%dT%H:%M:%S")
 
